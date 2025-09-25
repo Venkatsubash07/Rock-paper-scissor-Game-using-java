@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Rockpaperscissors {
     public static void main(String[] args) {
+        int subash=100;
         int playerscore=0;
         int AIscore=0;
         String S1 = "ROCK";
@@ -18,7 +19,7 @@ public class Rockpaperscissors {
         System.out.println("2 -- Rules");
         System.out.println("3 -- EXIT");
         System.out.print("enter any number : ");
-        System.out.println("SUBASH FROM VS CODE")
+        System.out.println("temp number"+subash);
         int number=sc.nextInt();
 
         if(number!=3){
