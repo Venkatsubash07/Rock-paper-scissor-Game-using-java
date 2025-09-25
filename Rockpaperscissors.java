@@ -18,6 +18,7 @@ public class Rockpaperscissors {
         System.out.println("2 -- Rules");
         System.out.println("3 -- EXIT");
         System.out.print("enter any number : ");
+        System.out.println("SUBASH FROM VS CODE")
         int number=sc.nextInt();
 
         if(number!=3){
