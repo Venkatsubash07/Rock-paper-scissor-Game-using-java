@@ -99,6 +99,11 @@ public class Rockpaperscissors {
                                 AIscore++;
                                     rounds--;
                                     System.out.println("Rounds remaining : "+rounds);
+                            }else if((AInumber==2)&&(yournumber==3)){
+                                System.out.println("You had obtained a point");
+                                playerscore++;
+                                    rounds--;
+                                    System.out.println("Rounds remaining : "+rounds);
                             }else if((AInumber==3)&&(yournumber==2)){
                                 System.out.println("You had obtained a point");
                                 AIscore++;
@@ -120,10 +125,13 @@ public class Rockpaperscissors {
                             System.out.println("\033[1;34mFinal AI score : " + AIscore + "\033[0m");
                             System.out.println("\033[1;34mfinal your score : " + playerscore + "\033[0m");
 
-                            if(AIscore<playerscore){
+                            if((rounds==0)&&(AIscore<playerscore)){
                                 System.out.println("\033[1;33mYou had won the GAME"+"\033[0m");
+                            }else{
+                                System.out.println("\033[1;33mYou had lost the GAME"+"\033[0m");
                             }
                 }
+                
 
 
 
